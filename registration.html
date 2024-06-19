@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Заполните поля формы авторизации</h2>
+<form action="...." method="post">
+    <p></p><label for="login">Логин *</label>
+    <p></p><input type="text" id="login"><br>
+
+    <p></p><label for="password">Пароль *</label>
+    <p></p><input type="password" id="password"><br>
+
+    <p></p><span>Откуда вы о нас узнали?</span><br>
+    <p></p><input checked type="checkbox" name="informationSource">Academ IT school
+    <input type="checkbox" name="informationSource">2ГИС
+    <input type="checkbox" name="informationSource">Радио
+    <p></p><input type="checkbox" name="informationSource">Газета
+    <input type="checkbox" name="informationSource">Другое
+
+    <p></p><span>Ваш пол</span><br>
+    <p></p><input type="radio" value="1" name="gender">Мужчина
+    <p></p><input type="radio" value="2" name="gender">Женщина
+
+    <p></p><span>Являетесь ли вы резиденотом РФ?</span><br>
+    <p></p><select size="1">
+    <option value="yes">Да</option>
+    <option value="no">Нет</option>
+    </select>
+
+    <p></p><span>Выберете браузеры которыми вы пользуетесь (для множественного выбора нажмите CTRL</span><br>
+    <p></p><select size="5" multiple="multiple">
+    <option value="Opera">Opera</option>
+    <option value="Firefox">Mozilla Firefox</option>
+    <option value="Chrome">Google Chrome</option>
+    <option value="Edge">Microsoft Edge</option>
+    <option value="Safari">Safari</option>
+</select>
+
+    <p></p><label for="interests">О себе</label><br>
+    <p></p><textarea maxlength="400" cols="100" rows="5" id="interests" placeholder="Расскажите о ваших интересах, увлечениях и хобби"></textarea><br>
+
+    <p></p><button type="submit">Зарегистрироваться</button><br>
+    <p></p> <button type="button" onclick="document.location='index.html'">Отмена регистриции</button><br>
+</form>
+<p></p><span>* - обязательные поля</span>
+</body>
+</html>
