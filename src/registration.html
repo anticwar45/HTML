@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Форма регистрации</title>
-    <link rel="stylesheet" type="text/css" href="src/style.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
 <h2>Заполните поля формы авторизации</h2>
@@ -11,21 +11,21 @@
     <div class="text">
         <p></p><label>
         Логин *
-        <input type="text">
+        <input type="text" name="login">
     </label>
     </div>
 
     <div class="text">
         <p></p><label>
         Пароль *
-        <input type="password">
+        <input type="password" name="password">
     </label>
     </div>
 
     <div class="text">
         <p></p><label>
         Email *
-        <input type="text">
+        <input type="email" name="email">
     </label>
     </div>
 
@@ -33,23 +33,23 @@
     <div class="checkbox">
         <p></p><label>
         Academ IT school
-        <input checked type="checkbox" name="informationSource">
+        <input checked type="checkbox" name="academItSchool">
     </label><br>
         <p></p><label>
         2ГИС
-        <input type="checkbox" name="informationSource">
+        <input type="checkbox" name="2gis">
     </label><br>
         <p></p><label>
         Радио
-        <input type="checkbox" name="informationSource">
+        <input type="checkbox" name="radio">
     </label><br>
         <p></p><label>
         Газета
-        <input type="checkbox" name="informationSource">
+        <input type="checkbox" name="newspaper">
     </label><br>
         <p></p><label>
         Другое
-        <input type="checkbox" name="informationSource">
+        <input type="checkbox" name="other">
     </label>
     </div>
     <br>
@@ -58,17 +58,17 @@
     <div class="radio">
         <label>
             Мужчина
-            <input type="radio" value="1" name="gender">
+            <input type="radio" value="men" name="gender">
         </label>
         <label>Женщина
-            <input type="radio" value="2" name="gender">
+            <input type="radio" value="women" name="gender">
         </label>
     </div>
 
     <p></p><h4>Являетесь ли вы резиденотом РФ? *</h4>
     <div class="select">
         <label>
-            <select size="1">
+            <select size="1" name="russianResidence">
                 <option value="yes">Да</option>
                 <option value="no">Нет</option>
             </select>
@@ -76,8 +76,8 @@
     </div>
 
     <p></p><h4>Выберете браузеры которыми вы пользуетесь (для множественного выбора нажмите CTRL)</h4>
-    <div class="select">
-        <label><select size="5" multiple="multiple">
+    <div class="select" >
+        <label><select size="5" multiple="multiple" name="browser">
             <option value="Opera">Opera</option>
             <option value="Firefox">Mozilla Firefox</option>
             <option value="Chrome">Google Chrome</option>
@@ -88,7 +88,7 @@
 
     <p></p><h4>О себе</h4>
     <div class="textarea">
-        <p></p><label><textarea maxlength="400" cols="100" rows="5"
+        <p></p><label><textarea maxlength="400" cols="100" rows="5" name="aboutYourself"
                          placeholder="Расскажите о ваших интересах, увлечениях и хобби"></textarea></label>
     </div>
     <br>
