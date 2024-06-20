@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход в ЛК</title>
+    <link rel="stylesheet" type="text/css" href="src/style.css"/>
+</head>
+<body>
+<h2>Введите данные учетной записи</h2>
+<form action="./handler.php" method="post">
+    <p></p><label>Логин
+    <input type="text" name="login">
+</label><br>
+    <p></p><label>Пароль
+    <input type="password" name="password" id="password">
+</label><br>
+    <a class="links" href="resetPass.html">Забыли пароль?</a>
+    <div class="buttons"><p></p>
+        <button type="submit">Войти</button>
+        <button type="button" onclick="document.location='index.html'">Возврат</button>
+        <button type="reset">Сброс</button>
+    </div>
+</form>
+</body>
+</html>
