@@ -2,48 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Форма регистрации</title>
+    <link rel="stylesheet" type="text/css" href="src/style.css"/>
 </head>
 <body>
 <h2>Заполните поля формы авторизации</h2>
 <form action="...." method="post">
-    <p></p><label for="login">Логин *</label>
-    <p></p><input type="text" id="login"><br>
+    <div class="text">
+        <p></p><label>
+        Логин *
+        <input type="text">
+    </label>
+    </div>
 
-    <p></p><label for="password">Пароль *</label>
-    <p></p><input type="password" id="password"><br>
+    <div class="text">
+        <p></p><label>
+        Пароль *
+        <input type="password">
+    </label>
+    </div>
 
-    <p></p><span>Откуда вы о нас узнали?</span><br>
-    <p></p><input checked type="checkbox" name="informationSource">Academ IT school
-    <input type="checkbox" name="informationSource">2ГИС
-    <input type="checkbox" name="informationSource">Радио
-    <p></p><input type="checkbox" name="informationSource">Газета
-    <input type="checkbox" name="informationSource">Другое
+    <div class="text">
+        <p></p><label>
+        Email *
+        <input type="text">
+    </label>
+    </div>
 
-    <p></p><span>Ваш пол</span><br>
-    <p></p><input type="radio" value="1" name="gender">Мужчина
-    <p></p><input type="radio" value="2" name="gender">Женщина
+    <p></p><h4>Откуда вы о нас узнали?</h4>
+    <div class="checkbox">
+        <p></p><label>
+        Academ IT school
+        <input checked type="checkbox" name="informationSource">
+    </label><br>
+        <p></p><label>
+        2ГИС
+        <input type="checkbox" name="informationSource">
+    </label><br>
+        <p></p><label>
+        Радио
+        <input type="checkbox" name="informationSource">
+    </label><br>
+        <p></p><label>
+        Газета
+        <input type="checkbox" name="informationSource">
+    </label><br>
+        <p></p><label>
+        Другое
+        <input type="checkbox" name="informationSource">
+    </label>
+    </div>
+    <br>
 
-    <p></p><span>Являетесь ли вы резиденотом РФ?</span><br>
-    <p></p><select size="1">
-    <option value="yes">Да</option>
-    <option value="no">Нет</option>
-    </select>
+    <p></p><h4>Ваш пол</h4>
+    <div class="radio">
+        <label>
+            Мужчина
+            <input type="radio" value="1" name="gender">
+        </label>
+        <label>Женщина
+            <input type="radio" value="2" name="gender">
+        </label>
+    </div>
 
-    <p></p><span>Выберете браузеры которыми вы пользуетесь (для множественного выбора нажмите CTRL</span><br>
-    <p></p><select size="5" multiple="multiple">
-    <option value="Opera">Opera</option>
-    <option value="Firefox">Mozilla Firefox</option>
-    <option value="Chrome">Google Chrome</option>
-    <option value="Edge">Microsoft Edge</option>
-    <option value="Safari">Safari</option>
-</select>
+    <p></p><h4>Являетесь ли вы резиденотом РФ? *</h4>
+    <div class="select">
+        <label>
+            <select size="1">
+                <option value="yes">Да</option>
+                <option value="no">Нет</option>
+            </select>
+        </label>
+    </div>
 
-    <p></p><label for="interests">О себе</label><br>
-    <p></p><textarea maxlength="400" cols="100" rows="5" id="interests" placeholder="Расскажите о ваших интересах, увлечениях и хобби"></textarea><br>
+    <p></p><h4>Выберете браузеры которыми вы пользуетесь (для множественного выбора нажмите CTRL)</h4>
+    <div class="select">
+        <label><select size="5" multiple="multiple">
+            <option value="Opera">Opera</option>
+            <option value="Firefox">Mozilla Firefox</option>
+            <option value="Chrome">Google Chrome</option>
+            <option value="Edge">Microsoft Edge</option>
+            <option value="Safari">Safari</option>
+        </select></label>
+    </div>
 
-    <p></p><button type="submit">Зарегистрироваться</button><br>
-    <p></p> <button type="button" onclick="document.location='index.html'">Отмена регистриции</button><br>
+    <p></p><h4>О себе</h4>
+    <div class="textarea">
+        <p></p><label><textarea maxlength="400" cols="100" rows="5"
+                         placeholder="Расскажите о ваших интересах, увлечениях и хобби"></textarea></label>
+    </div>
+    <br>
+
+    <p></p>
+    <div class="buttons">
+        <button type="submit">Зарегистрироваться</button>
+        <br>
+        <p></p>
+        <button type="button" onclick="document.location='index.html'">Отмена регистриции</button>
+    </div>
+    <br>
 </form>
 <p></p><span>* - обязательные поля</span>
 </body>
