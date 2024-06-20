@@ -1,0 +1,28 @@
+.checkbox {
+color:#af568e;
+font-weight:bold;
+}
+
+li a {
+text-decoration: none;
+}
+
+a {
+ color:blue;
+}
+
+body{
+    background-image: url("japan.jpeg");
+    background-color: #f2dfed;
+    background-size: cover;
+
+}
+
+table {
+     border-collapse: collapse;
+
+}
+
+tr:hover {
+background-color: #e6b9d5;
+}
